@@ -6,17 +6,7 @@ class Solution:
             
             #TODO: Write code below to return a boolean value with the solution to the prompt.
             
-            if s.len <= 6:
-                 return False 
-            count = 0 
-            arrLength = s.len - 1 
-            forLength = (s.len)/2
-            for i in range (forLength) :
-                if s[count] != s[arrLength]:
-                     return False 
-                count = count +1
-                arrLength = arrLength - 1
-            return True
+            return s == s[::-1] and len(s) > 6
       
             pass
 
