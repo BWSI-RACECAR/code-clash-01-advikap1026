@@ -11,7 +11,7 @@ class Solution:
             count = 0 
             arrLength = s.len - 1 
             forLength = (s.len)/2
-            for i in range (length) :
+            for i in range (forLength) :
                 if s[count] != s[arrLength]:
                      return False 
                 count = count +1
