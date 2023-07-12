@@ -5,11 +5,11 @@ class Solution:
             #return type: boolean
             
             #TODO: Write code below to return a boolean value with the solution to the prompt.
-            bool = True  
+            
             if s.len <= 6:
                  return False 
             count = 0 
-            arrLength = s.len
+            arrLength = s.len - 1 
             forLength = (s.len)/2
             for i in range (length) :
                 if s[count] != s[arrLength]:
