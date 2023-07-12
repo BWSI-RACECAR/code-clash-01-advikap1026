@@ -7,18 +7,15 @@ class Solution:
             #TODO: Write code below to return a boolean value with the solution to the prompt.
             bool = True  
             if s.len <= 6:
-                 bool = False 
+                 return False 
             count = 0 
             length = s.len/2
             for i in range (length) :
                 if s[count] != s[-count]:
-                     bool = False 
+                     return False 
                 count = count +1
-
-            if bool == False:
-                 return False
-            else:
-                 return True
+            return True
+      
             pass
 
 def main():
