@@ -9,11 +9,13 @@ class Solution:
             if s.len <= 6:
                  return False 
             count = 0 
-            length = s.len/2
+            arrLength = s.len
+            forLength = (s.len)/2
             for i in range (length) :
-                if s[count] != s[-count]:
+                if s[count] != s[arrLength]:
                      return False 
                 count = count +1
+                arrLength = arrLength - 1
             return True
       
             pass
